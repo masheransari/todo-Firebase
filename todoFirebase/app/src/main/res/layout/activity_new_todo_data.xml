@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_todo_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_Background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asheransari.todofirebase.new_todo_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Enter Your New Task Here...."
+            android:textColor="@color/btn_login"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_todo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/my_border"
+            android:hint="Enter Your Todo Here...!!"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveToDoBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_border"
+        android:text="Save Todo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
